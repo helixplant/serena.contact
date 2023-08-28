@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     color: #edfaee;
+    overscroll-behavior-y: none;
 }
 
 body {
@@ -14,11 +15,14 @@ header {
     font-size: 27px;
     padding: 20px;
     text-align: center;
+    position:relative;
 }
 
 main {
     display: flex;
     justify-content: space-between;
+    left: 0;
+    width: 85%;
     padding: 20px;
 }
 
@@ -31,14 +35,14 @@ section {
 }
 
 #left-section {
-    flex: 2;
+    flex: 3;
     padding: 20px;
     border: 1px solid #2e2828;
 
 }
 
 #middle-section {
-    flex: 5;
+    flex: 6;
     padding: 20px;
     border: 1px solid #2e2828;
 
@@ -47,8 +51,36 @@ section {
 #right-section {
     flex: 1;
     padding: 20px;
-    padding-left: 55px;
+    padding-left: 25px;
     padding-right: 15px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 10%;
+    padding-left: 15px;
+    padding-right: 25px;
+    padding-top: 20px;
+    background-color: #2e2828;
+    font-size: 22px;
+    text-align: center;
+    color: #edfaee85;
+    overflow-x: hidden;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+
+}
+
+.sidenav a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #fa5d02;
 }
 
 h1 {
