@@ -24,3 +24,27 @@ function navHighlighter() {
   });
 }
 
+var nav = document.getElementById('nav');
+window.addEventListener('scroll', function() {
+    if (this.window.pageYOffset >= 100) {
+        nav.style.display = 'block';
+    }
+});
+
+
+function myFunction(secID) {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+    var btnText = document.querySelector('.')
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "read less";
+      moreText.style.display = "inline";
+    }
+  } 
