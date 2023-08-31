@@ -18,7 +18,7 @@ header {
     text-align: center;
     width: 90%;
     position: fixed;
-}
+ }
 
 main {
     display:flex;
@@ -36,11 +36,23 @@ section {
     margin-right: 10px;
 
 }
+#inner-section {
+    padding: 10px;
+    background:#2e2828;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+}
+
+#full-section {
+    border-radius: 8px;
+    justify-content: space-between;
+}
 
 #left-section {
     flex: 3;
     padding: 20px;
-    border: 1px solid #2e2828;
+    border: none;
 
 }
 
@@ -56,6 +68,7 @@ section {
     padding: 20px;
     padding-left: 25px;
     padding-right: 15px;
+    border: none;
 }
 
 .sidebar {
@@ -127,11 +140,19 @@ h1 {
     font-size: 24px;
     color: #edfaee;
     margin-bottom: 10px;
+    justify-content: space-between;
+    display: block;
+    width: 15%;
 }
 
 h2 {
     font-size: 20px;
     color: #edfaee;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-size: 16px;
     margin-bottom: 5px;
 }
 
@@ -156,11 +177,21 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
+button {
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #f3d7d736;
+    border-radius: 8px;
+    border-color: #edfaee72;
+    border-width: 1px;
+    color: #edfaee72;
+    cursor: pointer;
+}
 .button {
     display: block;
     padding: 10px 20px;
-    background-color: goldenrod;
+    background-color: rgba(218, 165, 32, 0.22);
     color: hotpink;
     font-size: 17px;
     border: none;
@@ -181,3 +212,5 @@ a:hover {
     color:aqua;
     font-weight: 555;
 }
+
+#more {display: none;} 
