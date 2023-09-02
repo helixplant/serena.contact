@@ -52,6 +52,7 @@ section {
 #left-section {
     flex: 3;
     padding: 20px;
+    display: inline-block;
     border: none;
 
 }
@@ -65,6 +66,7 @@ section {
 
 #right-section {
     flex: 1;
+    display: inline-block;
     padding: 20px;
     padding-left: 25px;
     padding-right: 15px;
@@ -152,7 +154,14 @@ h2 {
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 17px;
+    color: #edfaee;
+    margin-bottom: 5px;
+}
+
+h4 {
+    font-size: 14;
+    color: #d7eed99a;
     margin-bottom: 5px;
 }
 
