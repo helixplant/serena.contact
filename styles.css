@@ -44,9 +44,20 @@ section {
 
 }
 
+#inner-section2 {
+    padding: 20px;
+    background:#2e2828;
+    border-radius: 8px;
+}
+
 #full-section {
     border-radius: 8px;
     justify-content: space-between;
+}
+
+#full-section2 {
+    display: flex;
+    justify-content: center;
 }
 
 #left-section {
@@ -75,7 +86,6 @@ section {
 
 .sidebar {
     width: 10%;
-    height: 100%;
     padding: 15px;
     background-color: #2e2828;
     position: fixed;
@@ -85,9 +95,12 @@ section {
     align-items: center;
     justify-content: center;
     right: 0;
-    top: 0;
+    top: 12%;
+    bottom: 12%;
     line-height: 5.5;
     z-index: 1;
+    border-radius: 8px;
+
 }
 
 nav ul {
@@ -124,7 +137,6 @@ nav ul a:hover {
     right: 0;
     position: fixed;
     z-index: 1;
-
 }
 
 .sidenav a {
@@ -170,6 +182,10 @@ p {
     line-height: 1.5;
     color: #edfaee;
     margin-bottom: 19px;
+}
+
+ul {
+    list-style-type: disc;
 }
 
 footer {
