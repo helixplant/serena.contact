@@ -36,6 +36,31 @@ section {
     margin-right: 10px;
 
 }
+
+#edu-sec {
+    background: #2e2828;
+    border-radius: 8px;
+    left: 0;
+    display: flex;
+}
+
+#edu-inner {
+    left: 0;
+    flex: 1;
+    border-color: #1f1919;
+    border-radius: 8px;
+}
+#edu-inner2 {
+    left: 0;
+    flex: 3;
+    border-color: #1f1919;
+    border-radius: 8px;
+}
+
+
+
+
+
 #inner-section {
     padding: 10px;
     background:#2e2828;
@@ -49,16 +74,31 @@ section {
     background:#2e2828;
     border-radius: 8px;
     margin-left: 1%;
+    min-width: 10em;
+    max-width: 15em;
+}
+#inner-section3 {
+    padding: 20px;
+    background:#2e2828;
+    border-radius: 8px;
+    margin-left: 1%;
+    min-width: 16em;
+    max-width: 20em;
 }
 
 #full-section {
     border-radius: 8px;
     justify-content: space-between;
+    
 }
 
 #full-section2 {
     display: flex;
+    width:60%;
+    flex:auto;
     left: 0;
+    flex-wrap: wrap;
+
 }  
 
 #left-section {
@@ -125,7 +165,7 @@ nav ul a {
 }
 
 nav ul a:hover {
-    font-size: 1.4vw;
+    font-size: 1.35vw;
     color: #fa5d02;
 }
 
@@ -183,6 +223,12 @@ h3 {
 h4 {
     font-size: 14;
     color: #d7eed99a;
+    margin-bottom: 5px;
+}
+
+h5 {
+    font-size: 21px;
+    color: #cbf7ce;
     margin-bottom: 5px;
 }
 
