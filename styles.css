@@ -22,7 +22,6 @@ header {
 
 main {
     display:flex;
-    justify-content: space-between;
     left: 0;
     width: 85%;
     padding: 20px;
@@ -46,7 +45,7 @@ section {
 
 #edu-inner {
     left: 0;
-    flex: 1;
+    flex: auto;
     border-color: #1f1919;
     border-radius: 8px;
 }
@@ -57,16 +56,11 @@ section {
     border-radius: 8px;
 }
 
-
-
-
-
 #inner-section {
     padding: 10px;
     background:#2e2828;
     border-radius: 8px;
     margin-bottom: 10px;
-
 }
 
 #inner-section2 {
@@ -81,6 +75,7 @@ section {
     padding: 20px;
     background:#2e2828;
     border-radius: 8px;
+    left:0;
     margin-left: 1%;
     min-width: 16em;
     max-width: 20em;
@@ -88,8 +83,10 @@ section {
 
 #full-section {
     border-radius: 8px;
-    justify-content: space-between;
-    
+    display: inline;
+    padding: 10px;
+    flex:auto;
+    left:0;
 }
 
 #full-section2 {
@@ -102,7 +99,7 @@ section {
 }  
 
 #left-section {
-    flex: 3;
+    flex: auto;
     padding: 10px;
     display: inline-block;
     border: none;
@@ -123,6 +120,13 @@ section {
     padding-left: 25px;
     padding-right: 15px;
     border: none;
+}
+
+#left-header {
+    display: flex;
+    flex:1;
+    left: 0;
+    width: 10%;
 }
 
 .sidebar {
@@ -207,6 +211,11 @@ h1 {
     display: block;
     width: 15%;
 }
+h6 {
+    font-size: 24px;
+    color: #edfaee;
+    margin-bottom: 10px;
+}
 
 h2 {
     font-size: 20px;
@@ -228,7 +237,7 @@ h4 {
 
 h5 {
     font-size: 21px;
-    color: #cbf7ce;
+    color: #edfaee;
     margin-bottom: 5px;
 }
 
