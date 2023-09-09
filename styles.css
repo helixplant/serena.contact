@@ -41,11 +41,12 @@ section {
     border-radius: 8px;
     left: 0;
     display: flex;
+    flex:auto;
 }
 
 #edu-inner {
     left: 0;
-    flex: auto;
+    flex: 1;
     border-color: #1f1919;
     border-radius: 8px;
 }
@@ -253,7 +254,7 @@ ul {
 }
 
 footer {
-    background-color: #2e2828;
+    background-color: #292323;
     padding: 20px;
     text-align: center;
 }
