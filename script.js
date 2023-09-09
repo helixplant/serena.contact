@@ -1,50 +1,20 @@
-const sections = document.querySelectorAll("section[id]");
+let noOfCharac = 150;
+let contents = document.querySelectorAll(".middle-section");
+/*
+contents.forEach(content => {
+        if(content.textContent.length < noOfCharac){
+            content.nextElementSibling.style.display = "none";
+        } else {
+            let displayText = content.textContent.slice(0, noOfCharac);
+            let moreText = content.textContent.slice(noOfCharac);
+            content.innerHTML = '${displayText}<span class="dots">...</span><span class="hide more">${moreText}</span>'
 
-window.addEventListener("scroll", navHighlighter);
-
-function navHighlighter() {
-  
-  
-  //let scrollY = window.pageYOffset;
-  
-  sections.forEach(current => {
-    const sectionHeight = current.offsetHeight;
-
-    const sectionTop = (current.getBoundingClientRect().top + window.scrollY) - 50;
-    sectionId = current.getAttribute("id");
-
-    if (
-      scrollY > sectionTop &&
-      scrollY <= sectionTop + sectionHeight
-    ){
-      document.querySelector(".navigation a[href*=" + sectionId + "]").classList.add("active");
-    } else {
-      document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("active");
     }
-  });
+});*/
+
+function readMore(btn){
+    let post = btn.parentElement;
+    post.querySelector(".dots").classList.toggle("hide");
+    post.querySelector(".more").classList.toggle("hide");
+    btn.textContent == "Read More" ? btn.textContent = "Read Less" : btn.textContent = "Read More"
 }
-
-var nav = document.getElementById('nav');
-window.addEventListener('scroll', function() {
-    if (this.window.pageYOffset >= 100) {
-        nav.style.display = 'block';
-    }
-});
-
-
-function myFunction(secID) {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
-    var btnText = document.querySelector('.')
-  
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "read more";
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "read less";
-      moreText.style.display = "inline";
-    }
-  } 

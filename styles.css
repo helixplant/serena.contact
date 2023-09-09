@@ -18,6 +18,7 @@ header {
     text-align: center;
     width: 100%;
     position: fixed;
+    box-shadow: 0px 5px 10px 2px #1f1919;
  }
 
 main {
@@ -71,6 +72,8 @@ section {
     margin-left: 1%;
     min-width: 10em;
     max-width: 15em;
+    box-shadow: 0px 0px 10px 2px #0f0c0c;
+
 }
 #inner-section3 {
     padding: 20px;
@@ -80,6 +83,8 @@ section {
     margin-left: 1%;
     min-width: 16em;
     max-width: 20em;
+    box-shadow: 0px 0px 10px 2px #0f0c0c;
+
 }
 
 #full-section {
@@ -102,16 +107,44 @@ section {
 #left-section {
     flex: auto;
     padding: 10px;
+    margin-left: 40px;
     display: inline-block;
-    border: none;
+    border:#edfaee;
+    border-radius: 8px;
 
 }
 
-#middle-section {
+#left-section2 {
+    flex: auto;
+    padding: 10px;
+    display: inline-block;
+
+}
+
+.middle-section {
     flex: 6;
     padding: 20px;
     border: 1px solid #2e2828;
 
+}
+.middle-section button {
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #f3d7d736;
+    border-radius: 8px;
+    border-color: #edfaee72;
+    border-width: 1px;
+    color: #edfaee72;
+    cursor: pointer;
+}
+
+.middle-sectiton:not(:last-child){
+    margin-bottom: 50px;
+}
+
+.hide{
+    display: none;
 }
 
 #right-section {
@@ -191,6 +224,8 @@ nav ul a:hover {
     right: 0;
     position: fixed;
     z-index: 1;
+    box-shadow: 0px 0px 10px 2px #1f1919;
+
 }
 
 .sidenav a {
