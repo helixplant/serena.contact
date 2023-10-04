@@ -1,9 +1,11 @@
-let noOfCharac = 150;
-let contents = document.querySelectorAll("#middle-section");
-
-function readMore(btn){
+function readMore(btn) {
     let post = btn.parentElement;
-    post.querySelector(".dots").classList.toggle("hide");
-    post.querySelector(".more").classList.toggle("hide");
-    btn.textContent == "Read More" ? btn.textContent = "Read Less" : btn.textContent = "Read More"
-}
+    let dots = post.querySelector(".dots");
+    let moreText = post.querySelector(".more");
+    
+    dots.classList.toggle("hide");
+    moreText.classList.toggle("hide");
+  
+    btn.textContent = moreText.classList.contains("hide") ? "Read More" : "Read Less";
+  }
+  
