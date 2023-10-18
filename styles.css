@@ -322,6 +322,7 @@ h5 {
 
 .activity {
     padding: 3rem;
+    margin-bottom: 10%;
 
 }
 
@@ -368,5 +369,11 @@ h5 {
 }
 img:hover {
     -webkit-filter: drop-shadow(0px 0px 7px #0f0c0c);
-    filter: drop-shadow(0px 0px 7px #0f0c0c);
+    filter: drop-shadow(0px 0px 7px #4e4242);
+    -webkit-transition: color 225ms ease-in-out;
+    -moz-transition: color 225ms ease-in-out;
+    -o-transition: color 225ms ease-in-out;
+    -ms-transition: color 225ms ease-in-out;
+    transition: color 225ms ease-in-out;
+    
 }
